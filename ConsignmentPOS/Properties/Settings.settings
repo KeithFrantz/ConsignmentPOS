@@ -1,0 +1,41 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConsignmentPOS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CoStoreConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=KEITH-LAPTOP\SQLEXPRESS;Initial Catalog=CoStore;Integrated Security=True;Connect Timeout=30;Encrypt=False&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=KEITH-LAPTOP\SQLEXPRESS;Initial Catalog=CoStore;Integrated Security=True;Connect Timeout=30;Encrypt=False</Value>
+    </Setting>
+    <Setting Name="ReceiptHeading" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Round the Curve to Altoona 2023 MER Convention</Value>
+    </Setting>
+    <Setting Name="SellersRelease1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Your signature acknowledges that all unsold items have been returned to you</Value>
+    </Setting>
+    <Setting Name="SellersRelease2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">in substantially the same condition as when they were received for sale, you</Value>
+    </Setting>
+    <Setting Name="SellersRelease3" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">have received the proper amount for items sold, and you hold no further</Value>
+    </Setting>
+    <Setting Name="SellersRelease4" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">claims on the White Elephant Sale activity of the convention.</Value>
+    </Setting>
+    <Setting Name="MonetaryUnits" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">All monetary amounts are US dollars</Value>
+    </Setting>
+    <Setting Name="CommissionRate" Type="System.Decimal" Scope="Application">
+      <Value Profile="(Default)">0.15</Value>
+    </Setting>
+    <Setting Name="ConsignmentStmt1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">The items listed above have been consigned from the seller listed above</Value>
+    </Setting>
+    <Setting Name="ConsignmentStmt2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">to the White Elephant Sale of the convention.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

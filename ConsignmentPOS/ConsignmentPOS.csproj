@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9A8A8FE-308F-49F1-9518-F27FCFF0A28B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ConsignmentPOS</RootNamespace>
+    <AssemblyName>ConsignmentPOS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CashCount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CashCount.Designer.cs">
+      <DependentUpon>CashCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeExistingItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangeExistingItems.Designer.cs">
+      <DependentUpon>ChangeExistingItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeExistingSales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangeExistingSales.Designer.cs">
+      <DependentUpon>ChangeExistingSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeExistingSellers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangeExistingSellers.Designer.cs">
+      <DependentUpon>ChangeExistingSellers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoStoreDataSet.cs">
+      <DependentUpon>CoStoreDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CoStoreDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoStoreDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CoStoreDevDataSet.cs">
+      <DependentUpon>CoStoreDevDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CoStoreDevDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoStoreDevDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EnterNewItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnterNewItems.Designer.cs">
+      <DependentUpon>EnterNewItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterNewSellers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnterNewSellers.Designer.cs">
+      <DependentUpon>EnterNewSellers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainLocations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MaintainLocations.Designer.cs">
+      <DependentUpon>MaintainLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterNewSales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnterNewSales.Designer.cs">
+      <DependentUpon>EnterNewSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettleWSellers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettleWSellers.Designer.cs">
+      <DependentUpon>SettleWSellers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CashCount.resx">
+      <DependentUpon>CashCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeExistingItems.resx">
+      <DependentUpon>ChangeExistingItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeExistingSales.resx">
+      <DependentUpon>ChangeExistingSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeExistingSellers.resx">
+      <DependentUpon>ChangeExistingSellers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterNewItems.resx">
+      <DependentUpon>EnterNewItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterNewSales.resx">
+      <DependentUpon>EnterNewSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterNewSellers.resx">
+      <DependentUpon>EnterNewSellers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintainLocations.resx">
+      <DependentUpon>MaintainLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SettleWSellers.resx">
+      <DependentUpon>SettleWSellers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CoStoreDataSet.xsc">
+      <DependentUpon>CoStoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CoStoreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CoStoreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CoStoreDataSet.xss">
+      <DependentUpon>CoStoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CoStoreDevDataSet.xsc">
+      <DependentUpon>CoStoreDevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CoStoreDevDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CoStoreDevDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CoStoreDevDataSet.xss">
+      <DependentUpon>CoStoreDevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
